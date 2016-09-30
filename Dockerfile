@@ -1,6 +1,6 @@
 FROM microsoft/dotnet:latest
 
-COPY app/* /app
+COPY app/* /app/
 
 WORKDIR /app
 
