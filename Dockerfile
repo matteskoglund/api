@@ -1,6 +1,6 @@
 FROM microsoft/dotnet:latest
 
-COPY bin/Debug/netcoreapp1.0/publish /app
+COPY app/* /app
 
 WORKDIR /app
 
