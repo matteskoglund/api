@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:latest
+FROM microsoft/aspnetcore:1.0.1
 
 COPY app/* /app/
 
