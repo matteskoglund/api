@@ -1,5 +1,5 @@
 {
-  "name":"TodoApiXX",
+  "name":"TodoApi",
   "dependencies": {
     "Microsoft.NETCore.App": {
       "version": "1.0.1",
