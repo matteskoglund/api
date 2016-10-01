@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "TodoApi": {
+    "TodoApi4": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "http://localhost:5000/api/values",

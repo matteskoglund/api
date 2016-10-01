@@ -1,10 +1,6 @@
-FROM microsoft/aspnetcore:1.0.1
-
-COPY app/* /app/
-
+FROM microsoft/dotnet:1.0.0-core
 WORKDIR /app
-
-
-EXPOSE 5000/tcp
-
-CMD ["dotnet", "/app/TodoApi.dll", "--server.urls", "http://*:5000"]
+ENV ASPNETCORE_URLS http://*:5050
+EXPOSE 5050
+ENTRYPOINT ["dotnet", "TodoApi.dll"]
+COPY . /app

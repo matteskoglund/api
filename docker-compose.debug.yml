@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  todoapi:
+    image: todoapi:debug
+    build:
+      context: .
+      dockerfile: Dockerfile.debug
+    ports:
+      - "5050:5050"
+    environment:
+      - REMOTE_DEBUGGING
