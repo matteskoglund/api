@@ -12,7 +12,7 @@ namespace test
         {
             _valuesController = new ValuesController();
         }
-
+         [Fact]
         public void PassingTest()
         {
             Assert.NotNull(_valuesController);
