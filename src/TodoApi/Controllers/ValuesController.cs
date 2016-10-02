@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using TemperaturesLib;
 
 namespace TodoApi.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+        Temperature temperature = new Temperature();
+        
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
