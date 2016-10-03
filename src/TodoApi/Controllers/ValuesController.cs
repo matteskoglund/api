@@ -10,8 +10,7 @@ namespace TodoApi.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        Temperature temperature = new Temperature();
-        
+               
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get()
