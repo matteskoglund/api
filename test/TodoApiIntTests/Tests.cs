@@ -35,7 +35,7 @@ namespace Tests
             var responseString = await response.Content.ReadAsStringAsync();
 
             // Assert
-            Assert.Equal("[\"Matte\",\"Skoglund\"]",
+            Assert.Equal("[\"Mats\",\"Skoglund\"]",
             responseString);
         }
     
