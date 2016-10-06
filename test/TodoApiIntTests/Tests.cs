@@ -38,11 +38,6 @@ namespace Tests
             Assert.Equal("[\"Matte\",\"Skoglund\"]",
             responseString);
         }
-
-        [Fact]
-        public void Test1() 
-        {
-            Assert.True(false);
-        }
+    
     }
 }
