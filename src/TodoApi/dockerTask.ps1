@@ -75,8 +75,10 @@ function BuildImage () {
 
     if (Test-Path $composeFileName) {
         Write-Host "Building the project ($ENVIRONMENT)."
-        $pubFolder = "bin\$Environment\$framework\publish"
-        dotnet publish -f $framework -r $runtimeID -c $Environment -o $pubFolder
+        # Changed from "bin\$Environment\$framework\publish" 
+        $pubFolder = "."
+        # Commented to use the publish build from the build script
+      #  dotnet publish -f $framework -r $runtimeID -c $Environment -o $pubFolder
 
         Write-Host "Building the image $imageName ($Environment)."
         docker-compose -f "$pubFolder\$composeFileName" -p $projectName build
