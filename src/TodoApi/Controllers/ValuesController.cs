@@ -16,7 +16,7 @@ namespace TodoApi.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Mats", "Skogis" };
+            return new string[] { "Mats", "Skoglund" };
         }
 
         // GET api/values/5
