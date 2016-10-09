@@ -4,8 +4,8 @@ SET dotnet="C:/Program Files/dotnet/dotnet.exe"
 SET opencover=C:\Users\mats\.nuget\packages\OpenCover\4.6.519\tools\OpenCover.Console.exe
 SET reportgenerator=C:\Users\mats\.nuget\packages\ReportGenerator\2.4.5\tools\ReportGenerator.exe
 SET converter=C:\Users\mats\.nuget\packages\OpenCoverToCoberturaConverter\0.2.4\tools\OpenCoverToCoberturaConverter.exe
-SET targetargs="test"  
-SET filter="+[*]Temperature* -[*.Test]* -[xunit.*]* -[FluentValidation]*"  
+SET targetargs="test --no-build -xml testresults.xml"  
+SET filter="+[*]* -[*.Test]* -[xunit.*]* -[FluentValidation]*"  
 SET coveragefile=Coverage.xml  
 SET coveragedir=Coverage
 
@@ -14,7 +14,6 @@ REM Run code coverage analysis
 
 
 %converter% -input:Coverage.xml -output:Cobertura.xml
-
 REM Generate the report  
 REM %reportgenerator% -targetdir:%coveragedir% -reporttypes:Html;Badges -reports:%coveragefile% -verbosity:Error
 
