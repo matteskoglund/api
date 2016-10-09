@@ -1,5 +1,6 @@
 using Xunit;
 using TodoApi.Controllers;
+using System.Collections.Generic;
 
 namespace test
 {
@@ -13,9 +14,24 @@ namespace test
             _valuesController = new ValuesController();
         }
          [Fact]
-        public void PassingTest()
+        public void ValuesController_NotNull()
         {
             Assert.NotNull(_valuesController);
+        }
+
+        [Fact]
+        public void ValuesController_Index()
+        {
+            IEnumerable<string> res = _valuesController.Get();
+            Assert.NotNull(res);
+        }
+
+        [Fact]
+        public void ValuesController_GetId_5_Returns()
+        {
+            string res = _valuesController.Get(5);
+                        
+            Assert.NotNull(res);
         }
 
     }
