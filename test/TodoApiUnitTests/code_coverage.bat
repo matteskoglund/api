@@ -15,7 +15,7 @@ REM Run code coverage analysis
 
 %converter% -input:Coverage.xml -output:Cobertura.xml
 REM Generate the report  
-REM %reportgenerator% -targetdir:%coveragedir% -reporttypes:Html;Badges -reports:%coveragefile% -verbosity:Error
+%reportgenerator% -targetdir:%coveragedir% -reporttypes:Html;Badges -reports:%coveragefile% -verbosity:Error
 
 REM Open the report  
 REM start "report" "%coveragedir%\index.htm"  
