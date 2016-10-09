@@ -8,6 +8,9 @@
         "TodoApi": {
             "target": "project"
         },
+         "OpenCover": "4.6.519",
+    "OpenCoverToCoberturaConverter": "0.2.4",
+    "ReportGenerator": "2.4.5"
     },
     
     "frameworks": {
